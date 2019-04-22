@@ -2,34 +2,44 @@
 <html>
 <head>
         <title>Calculator Online</title>
-        <link rel="stylesheet" type="text/css" href="./style.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet"> 
 </head>
 <body>
         <h1>Online Calculator</h1>
-
-        <!--Display Window-->
-        <input type="text" id="calc-display-val" value=0>
-        <!--Number Buttons-->
-        <button type="button" class="calc-btn-num" id="calc-zero">0</button>
-        <button type="button" class="calc-btn-num" id="calc-one">1</button>
-        <button type="button" class="calc-btn-num" id="calc-two">2</button>
-        <button type="button" class="calc-btn-num" id="calc-three">3</button>
-        <button type="button" class="calc-btn-num" id="calc-four">4</button>
-        <button type="button" class="calc-btn-num" id="calc-five">5</button>
-        <button type="button" class="calc-btn-num" id="calc-six">6</button>
-        <button type="button" class="calc-btn-num" id="calc-seven">7</button>
-        <button type="button" class="calc-btn-num" id="calc-eight">8</button>
-        <button type="button" class="calc-btn-num" id="calc-nine">9</button>
-        <button type="button" class="calc-btn-num" id="calc-decimal">.</button>
-
-        <!--Operations-->
-        <button type="button" class="calc-btn-operator" id="calc-add">+</button>
-        <button type="button" class="calc-btn-operator" id="calc-subtract">-</button>
-        <button type="button" class="calc-btn-operator" id="calc-multiply">*</button>
-        <button type="button" class="calc-btn-operator" id="calc-divide">/</button>
-        <button type="button" class="calc-btn-operator" id="calc-equals">=</button>
-        <button type="button" class="calc-btn-operator" id="calc-clear">C</button>
+        <div class = "calculator-body">
+                <!--Display Window-->
+                <input type="text" id="calc-display-val" value=0>
+                <!--Button Rows-->
+                <div class="row-1">
+                        <button type="button" class="calc-btn-operator" id="calc-clear">C</button>
+                        <button type="button" class="calc-btn-operator" id="calc-divide">/</button>
+                </div>
+                <div class="row-2">
+                        <button type="button" class="calc-btn-num" id="calc-seven">7</button>
+                        <button type="button" class="calc-btn-num" id="calc-eight">8</button>
+                        <button type="button" class="calc-btn-num" id="calc-nine">9</button>
+                        <button type="button" class="calc-btn-operator" id="calc-multiply">*</button>
+                </div>
+                <div class="row-3">
+                        <button type="button" class="calc-btn-num" id="calc-four">4</button>
+                        <button type="button" class="calc-btn-num" id="calc-five">5</button>
+                        <button type="button" class="calc-btn-num" id="calc-six">6</button>
+                        <button type="button" class="calc-btn-operator" id="calc-subtract">-</button>
+                </div>
+                <div class="row-4">
+                        <button type="button" class="calc-btn-num" id="calc-one">1</button>
+                        <button type="button" class="calc-btn-num" id="calc-two">2</button>
+                        <button type="button" class="calc-btn-num" id="calc-three">3</button>
+                        <button type="button" class="calc-btn-operator" id="calc-add">+</button>
+                </div>
+                <div class="row-5">
+                        <button type="button" class="calc-btn-num" id="calc-zero">0</button> 
+                        <button type="button" class="calc-btn-num" id="calc-decimal">.</button>
+                        <button type="button" class="calc-btn-operator" id="calc-equals">=</button>                
+                </div>
+        </div>
 
         
         <script src="script.js"></script>
