@@ -137,6 +137,7 @@ document.getElementById("calc-add").addEventListener("click", function(){
         console.log(num1);
         operator = '+';
         isNewNum = true;
+        decimalUsed = false;
 });
 
 document.getElementById("calc-subtract").addEventListener("click", function(){
@@ -149,6 +150,7 @@ document.getElementById("calc-subtract").addEventListener("click", function(){
         console.log(num1);
         operator = '-';
         isNewNum = true;
+        decimalUsed = false;
 });
 
 document.getElementById("calc-divide").addEventListener("click", function(){
@@ -161,6 +163,7 @@ document.getElementById("calc-divide").addEventListener("click", function(){
         console.log(num1);
         operator = '/';
         isNewNum = true;
+        decimalUsed = false;
 });
 
 document.getElementById("calc-multiply").addEventListener("click", function(){
@@ -173,6 +176,7 @@ document.getElementById("calc-multiply").addEventListener("click", function(){
         console.log(num1);
         operator = '*';
         isNewNum = true;
+        decimalUsed = false;
 });
 
 document.getElementById("calc-clear").addEventListener("click", function(){
@@ -180,6 +184,7 @@ document.getElementById("calc-clear").addEventListener("click", function(){
         num1 = null;
         num2 = null;
         isNewNum = true;
+        decimalUsed = false;
 });
 
 document.getElementById("calc-equals").addEventListener("click", function(){
@@ -204,4 +209,5 @@ document.getElementById("calc-equals").addEventListener("click", function(){
         }
         num1 = null;
         isNewNum = true;
+        decimalUsed = false;
 });
